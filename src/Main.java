@@ -4,7 +4,7 @@ import java.util.concurrent.Executors;
 
 public class Main {
     public static void main(String[] args) {
-        ExecutorService execute = Executors.newFixedThreadPool(1);
+        ExecutorService execute = Executors.newFixedThreadPool(3);
         ThreadWork thread1 = new ThreadWork(execute, "thread 1");
         ThreadWork thread2 = new ThreadWork(execute, "thread 2");
         ThreadWork thread3 = new ThreadWork(execute, "thread 3");
